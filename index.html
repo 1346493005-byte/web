@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIKKO 游戏工坊 | Mod 管理 · 存档无忧</title>
+  <meta name="description" content="游戏 Mod 管理器、存档管理工具与安装教程分享站，全部为正版免费工具。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="logo">
+        <div class="logo-mark">
+          <span class="gear">⚙</span>
+          <span class="puzzle">▦</span>
+        </div>
+        <div class="logo-text">
+          <strong>KIKKO</strong>
+          <small>GAME WORKSHOP</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#releases">最新发布</a>
+        <a href="#tools">工具下载</a>
+        <a href="#tutorials">安装教程</a>
+        <a href="#contact">联系客服</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ Hero 首屏 ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1>KIKKO 游戏工坊</h1>
+      <p class="slogan">Mod 管理 · 存档无忧 · 教程齐全</p>
+      <p class="sub">分享免费正版的游戏 Mod 管理器与存档管理工具，附详细安装教程，让 Mod 管理更省心。</p>
+      <div class="stats">
+        <div class="stat"><b id="visitCount">28,699</b><span>访问</span></div>
+        <div class="stat"><b id="dlCount">24,853</b><span>下载</span></div>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="#releases">📰 最新发布</a>
+        <a class="btn btn-ghost" href="#tools">⬇ 工具下载</a>
+        <a class="btn btn-ghost" href="#tutorials">📚 安装教程</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 最新发布 ============ -->
+  <section class="releases" id="releases">
+    <div class="container">
+      <h2>最新发布</h2>
+      <div class="section-head">
+        <span>平台公告：本站持续收录精品 Mod 工具与教程，资源定期更新，建议收藏。</span>
+      </div>
+      <div class="release-list" id="releaseList">
+        <!-- 由 JS 渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 工具下载 ============ -->
+  <section class="downloads" id="tools">
+    <div class="container">
+      <h2>工具下载</h2>
+      <div class="section-head">
+        <span>全部为正版免费工具，点击查看详情获取官方下载</span>
+      </div>
+      <div class="card-grid" id="cardGrid">
+        <!-- 卡片由 JS 渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 安装教程 ============ -->
+  <section class="tutorials" id="tutorials">
+    <div class="container">
+      <h2>安装教程</h2>
+      <div class="tutorial-grid" id="tutorialGrid">
+        <!-- 由 JS 渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系客服 ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-box">
+      <div class="contact-info">
+        <h2>联系客服</h2>
+        <p>客服在线时间：8:00 - 21:30</p>
+        <p>有问题请携带截图与问题描述联系客服，我们会尽快处理。</p>
+        <ul class="contact-list">
+          <li>📱 微信 / QQ：直接扫码或搜索联系方式添加</li>
+          <li>💬 评论区 / 站内留言：留下你的问题</li>
+        </ul>
+      </div>
+      <div class="qrcode">
+        <div class="qr-placeholder">二维码占位<br /><small>替换成你的客服二维码</small></div>
+        <p>① 保存图片到相册<br />② 打开客户端扫一扫</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 KIKKO 游戏工坊 · 本站仅分享正版免费工具与合规教程，请遵守各游戏平台的使用条款。</p>
+    </div>
+  </footer>
+
+  <!-- ============ 下载/详情弹窗 ============ -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal">
+      <h3 id="modalTitle">提示</h3>
+      <p id="modalText"></p>
+      <button class="btn btn-primary" onclick="closeModal()">关闭</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
