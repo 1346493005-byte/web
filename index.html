@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DLHub 下载站 | 稳定 · 顺滑 · 精选资源</title>
+  <meta name="description" content="专业资源下载与更新服务，致力于为用户提供更稳定、更顺滑的使用体验。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="logo">
+        <div class="logo-mark">
+          <span class="moon"></span>
+          <span class="mouse">▼</span>
+        </div>
+        <div class="logo-text">
+          <strong>DLHub</strong>
+          <small>DL HUB</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#downloads">下载专区</a>
+        <a href="#custom">定制服务</a>
+        <a href="#contact">联系客服</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ Hero 首屏 ============ -->
+  <section class="hero">
+    <div class="container">
+      <h1>DLHub 下载站</h1>
+      <p class="slogan">稳定 · 顺滑 · 精选资源</p>
+      <p class="sub">专业的资源下载与更新服务，致力于为用户提供更稳定、更顺滑的使用体验。</p>
+      <div class="stats">
+        <div class="stat"><b id="visitCount">28,697</b><span>访问</span></div>
+        <div class="stat"><b id="dlCount">24,853</b><span>下载</span></div>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="#downloads">⬇ 下载专区</a>
+        <a class="btn btn-ghost" href="#custom">⚙ 定制服务</a>
+        <a class="btn btn-ghost" href="#contact">🎧 联系客服</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 卖点 ============ -->
+  <section class="features">
+    <div class="container grid-4">
+      <div class="feature"><div class="icon">🛡️</div><h3>稳定可靠</h3><p>持续优化维护</p></div>
+      <div class="feature"><div class="icon">🎮</div><h3>多分类覆盖</h3><p>支持多类资源</p></div>
+      <div class="feature"><div class="icon">🚀</div><h3>持续更新</h3><p>定期维护版本</p></div>
+      <div class="feature"><div class="icon">🔒</div><h3>售后支持</h3><p>客服在线协助</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 下载专区 ============ -->
+  <section class="downloads" id="downloads">
+    <div class="container">
+      <h2>下载专区</h2>
+      <div class="section-head">
+        <span>精选资源分类下载</span>
+        <a class="view-all" href="#" onclick="return false;">查看全部版本 &gt;</a>
+      </div>
+
+      <div class="card-grid" id="cardGrid">
+        <!-- 卡片由 JS 渲染，数据在 script.js 中 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 定制服务 ============ -->
+  <section class="custom" id="custom">
+    <div class="container">
+      <h2>定制服务</h2>
+      <p class="custom-desc">支持个性化需求定制，根据使用场景与习惯进行优化，让体验更贴合个人需求。</p>
+      <div class="custom-badges">
+        <span>一对一服务</span><span>效果保障</span><span>快速响应</span>
+      </div>
+      <a class="btn btn-primary" href="#contact">立即咨询定制</a>
+    </div>
+  </section>
+
+  <!-- ============ 联系客服 ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-box">
+      <div class="contact-info">
+        <h2>联系客服</h2>
+        <p>客服在线时间：8:00 - 21:30</p>
+        <p>有问题请携带订单截图与问题联系客服，我们会尽快处理。</p>
+        <ul class="contact-list">
+          <li>📱 微信 / QQ：直接扫码或搜索联系方式添加</li>
+          <li>🛒 交易平台：闲鱼 / 淘宝 / 拼多多 店铺客服</li>
+        </ul>
+      </div>
+      <div class="qrcode">
+        <div class="qr-placeholder">二维码占位<br /><small>替换成你的客服二维码</small></div>
+        <p>① 保存图片到相册<br />② 打开客户端扫一扫</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 DLHub 下载站 · 仅用于合法用途，请遵守当地法律法规与平台规则。</p>
+    </div>
+  </footer>
+
+  <!-- ============ 下载/详情弹窗 ============ -->
+  <div class="modal-mask" id="modalMask">
+    <div class="modal">
+      <h3 id="modalTitle">提示</h3>
+      <p id="modalText"></p>
+      <button class="btn btn-primary" onclick="closeModal()">关闭</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
